@@ -7,7 +7,7 @@ import Box from '../../ui/components/box/box.jsx';
 // This component - represents a single page
 export const Home = () =>
   <div id="home" className="container-fluid">
-    <div id="top-white">
+    <div id="top-white" className="col-lg-12">
       <a href="/" id="brand">
         <img src="/images/ockupy.png" className="img-responsive" id="logo" />
       </a>

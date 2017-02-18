@@ -19,31 +19,28 @@ export default class Intro extends Component {
   }
   componentDidMount(){
     $(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset;
+    var y_scroll_pos = $(window).scrollTop();
     var scroll_pos_test = 10;
 
-      if(y_scroll_pos > scroll_pos_test) {
+      if(y_scroll_pos >= scroll_pos_test) {
         $('#intro').css({
           'transition':'all .6s ease-in',
           'width':'100%',
-          'overflow':'hidden',
         });
         $('#intro-box').css({
           'transition':'all .6s ease-in',
-          'left':'95%'
+          'left':'95%',
         })
-      }else if(){
+
+      }else if (y_scroll_pos < scroll_pos_test){
         $('#intro').css({
           'transition':'all .6s ease-in',
           'width':'50%',
           'overflow':'visible',
         });
-        $('#intro-box').css({
-          'position':'absolute',
-          'left':($(window).width() - $('#intro-box').outerWidth())/2,
-          'top':($('#intro').height() - $('#intro-box').outerHeight())/2,
-        })
+
       }
+
     });
 
       $('#intro-box').css({
