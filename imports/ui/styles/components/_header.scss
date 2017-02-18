@@ -1,0 +1,24 @@
+/**********************
+    Header Styles
+**********************/
+#header {
+  padding: 0;
+
+  #activate {
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 9px 9px 9px 15px;
+    position: fixed;
+    right: 0;
+  }
+  #nav {
+    min-height: 100vw;
+    height: 100%;
+    position: fixed;
+    background: blue;
+    width: 300px;
+    top: 0;
+  }
+}
