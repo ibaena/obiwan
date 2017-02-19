@@ -36,7 +36,7 @@
         right: 0;
         height: 100%;
         background: white;
-        width: calc(4vw + 8px);
+        width: calc(4vw + 3px);
         z-index: 999;
 
         #social-list {
@@ -57,7 +57,7 @@
         position: fixed;
         bottom: 0;
         background: white;
-        height: calc(5vh + -1px);
+        height: calc(5vh);
         z-index: 999;
     }
 }

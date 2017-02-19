@@ -1,0 +1,67 @@
+/*********************************
+       Section A Styles
+*********************************/
+#sectionA {
+    height: 100vh;
+    width: 100%;
+    background: #f8f8f8;
+
+    .sectionA-header {
+        margin-top: calc(20vh + 10px);
+        line-height: calc(7vh + 10px);
+
+        .sa-header-text {
+            font-size: calc(8vw + 5px);
+            font-family: 'Ramabhadra', sans-serif;
+        }
+    }
+
+    #sa-paragraph {
+        margin-top: calc(9vh + 5px);
+        max-width: 350px;
+
+        #sa-para-title {
+            font-size: calc(3vw + -8px);
+        }
+
+        #sa-para-content {
+            font-size: calc(1vw);
+            font-weight: 300;
+            margin-top: calc(3vh + 8px);
+            text-align: justify;
+            line-height: calc(1vw + 10px);
+        }
+    }
+
+    #what-we-do {
+        background: #1c1b20;
+        height: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .what-we-do-list {
+            list-style-type: none;
+            position: relative;
+
+
+            .what-title {
+              color: white;
+              font-size: calc(1vw + 2px);
+              padding-bottom: 2em;
+              padding-top: 1em;
+              font-family: 'Ramabhadra', sans-serif;
+            }
+            .what-list-item {
+              color: darkgray;
+              font-family: 'Ramabhadra', sans-serif;
+              font-size: calc(1vw + -3px);
+              line-height: calc(1vw + 10px);
+            }
+        }
+    }
+}

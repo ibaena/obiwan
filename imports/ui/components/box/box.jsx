@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Intro from '../intro/intro.jsx';
 import Empire from '../intro/empire.jsx';
+import SectionA from '../sectionA/sectionA.jsx';
 
 // Intro component
 export default class Box extends Component {
@@ -23,10 +24,12 @@ export default class Box extends Component {
 
   render() {
     this.centerBox();
+
     return (
       <div id="box" className="container-fluid">
         <Intro />
         <Empire />
+        <SectionA />
       </div>
     );
   }
