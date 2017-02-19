@@ -47,7 +47,27 @@
         left: 95%;
         width: 60px;
         color: white;
-        font-family: 'Hammersmith One', sans-serif;
+        font-family: 'Muli', sans-serif;
+        font-size: 13px;
+
+        #intro-arrow {
+            margin: 5px;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    .scroll-bounce-left {
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        position: fixed;
+        bottom: 15px;
+        left: calc(5vw + 5px);
+        width: 60px;
+        color: black;
+        font-family: 'Muli', sans-serif;
+        z-index: 999;
+        font-size: 12px;
 
         #intro-arrow {
             margin: 5px;
