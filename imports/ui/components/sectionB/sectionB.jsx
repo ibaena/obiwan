@@ -12,7 +12,22 @@ export default class SectionB extends Component {
   }
 
   componentDidMount(){
-
+    os.on('enter', '#sectionB', (element) => {
+      setTimeout(function(){
+        $('.parrallax-media').css({
+          'transition':'all .6s ease-in',
+          'width':'45%',
+          'opacity':'1'
+        });
+      },800)
+    });
+    os.on('leave', '#sectionB', (element) => {
+        $('.parrallax-media').css({
+          'transition':'all .6s ease-in',
+          'width':'0%',
+          'opacity':'0.01'
+        });
+    });
   }
 
   render() {
