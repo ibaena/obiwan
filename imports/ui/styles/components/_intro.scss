@@ -2,37 +2,57 @@
      Intro Section Styles
 *********************************/
 #intro {
-  background: pink;
-  height: 100%;
-  padding: 0;
-  width: 50%;
+    background: pink;
+    height: 100%;
+    padding: 0;
+    width: 50%;
 
-  #intro-box {
-    .intro-text{
-      font-size: calc(16vh + 10px);
-      margin: 0;
-      font-family: 'Francois One', sans-serif;
+    #intro-box {
+        .intro-text {
+            font-size: calc(16vh + 10px);
+            margin: 0;
+            font-family: 'Francois One', sans-serif;
+        }
     }
-  }
-  #intro-box-left {
-    right: 15%;
-    margin: 0;
-    text-align: center;
 
-    #intro-left-title {
-      font-size: calc(3vw + 5px);
-      font-family: 'Francois One', sans-serif;
-      margin: 0;
-      color: black;
+    #intro-box-left {
+        right: 15%;
+        margin: 0;
+        text-align: center;
+
+        #intro-left-title {
+            font-size: calc(3vw + 5px);
+            font-family: 'Francois One', sans-serif;
+            margin: 0;
+            color: black;
+        }
+
+        #left-break {
+            width: 80%;
+        }
+
+        #intro-left-text {
+            font-size: calc(3vw);
+            font-family: 'Francois One', sans-serif;
+            margin-top: 5px;
+            color: white;
+        }
     }
-    #left-break {
-      width: 80%;
+
+    .scroll-bounce {
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        position: absolute;
+        bottom: 0;
+        left: 95%;
+        width: 60px;
+        color: white;
+        font-family: 'Hammersmith One', sans-serif;
+
+        #intro-arrow {
+            margin: 5px;
+            position: relative;
+            top: 2px;
+        }
     }
-    #intro-left-text {
-      font-size: calc(3vw);
-      font-family: 'Francois One', sans-serif;
-      margin-top: 5px;
-      color: white;
-    }
-  }
 }

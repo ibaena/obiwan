@@ -42,25 +42,22 @@ export default class Intro extends Component {
 
       if(y_scroll_pos > scroll_pos_test) {
         if(fired === 0){
-
-
         $('#intro').css({
           'transition':'all .6s ease-in',
           'width':'100%',
         });
         $('#intro-box').css({
           'transition':'all .7s ease-in',
-          'left': '0%',
+          'left': '5%',
         })
         setTimeout(function(){
           $('#intro-box-left').show('slide',{direction:'right'},400);
         },650)
+        $('.scroll-bounce').slideUp();
       }
         fired = 1;
       }else if (y_scroll_pos <= scroll_pos_test){
-
         if(fired === 1){
-
           $('#intro').css({
             'transition':'all .6s ease-in',
             'width':'50%',
@@ -72,6 +69,7 @@ export default class Intro extends Component {
               'top': ($('#intro').height() - $('#intro-box').outerHeight())/2
             })
             $('#intro-box-left').hide('slide',{direction:'right'},400);
+            $('.scroll-bounce').slideDown();
         }
         fired = 0;
       }
@@ -94,6 +92,7 @@ export default class Intro extends Component {
           <hr id="left-break" />
           <p id="intro-left-text">Ockupy A Larger Market</p>
         </div>
+        <div className="scroll-bounce"> <i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>scroll</div>
       </div>
     );
   }
