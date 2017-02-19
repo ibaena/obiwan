@@ -9,8 +9,30 @@
 
   #intro-box {
     .intro-text{
-      font-size: calc(12vh + 10px);
+      font-size: calc(16vh + 10px);
       margin: 0;
+      font-family: 'Francois One', sans-serif;
+    }
+  }
+  #intro-box-left {
+    right: 15%;
+    margin: 0;
+    text-align: center;
+
+    #intro-left-title {
+      font-size: calc(3vw + 5px);
+      font-family: 'Francois One', sans-serif;
+      margin: 0;
+      color: black;
+    }
+    #left-break {
+      width: 80%;
+    }
+    #intro-left-text {
+      font-size: calc(3vw);
+      font-family: 'Francois One', sans-serif;
+      margin-top: 5px;
+      color: white;
     }
   }
 }
