@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Intro from '../intro/intro.jsx';
 import Empire from '../intro/empire.jsx';
 import SectionA from '../sectionA/sectionA.jsx';
+import SectionB from '../sectionB/sectionB.jsx';
 
 // Intro component
 export default class Box extends Component {
@@ -30,6 +31,7 @@ export default class Box extends Component {
         <Intro />
         <Empire />
         <SectionA />
+        <SectionB />
       </div>
     );
   }

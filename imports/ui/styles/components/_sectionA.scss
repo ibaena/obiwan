@@ -21,7 +21,8 @@
         max-width: 350px;
 
         #sa-para-title {
-            font-size: calc(3vw + -8px);
+            font-size: calc(3vw + 5px);
+            font-family: 'Ropa Sans', sans-serif;
         }
 
         #sa-para-content {
@@ -54,12 +55,12 @@
               font-size: calc(1vw + 2px);
               padding-bottom: 2em;
               padding-top: 1em;
-              font-family: 'Ramabhadra', sans-serif;
+              font-family: 'Ropa Sans', sans-serif;
             }
             .what-list-item {
               color: darkgray;
-              font-family: 'Ramabhadra', sans-serif;
-              font-size: calc(1vw + -3px);
+              font-family: 'Ropa Sans', sans-serif;
+              font-size: calc(1vw + -1px);
               line-height: calc(1vw + 10px);
             }
         }
