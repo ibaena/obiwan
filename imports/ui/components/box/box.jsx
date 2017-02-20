@@ -4,6 +4,7 @@ import Intro from '../intro/intro.jsx';
 import Empire from '../intro/empire.jsx';
 import SectionA from '../sectionA/sectionA.jsx';
 import SectionB from '../sectionB/sectionB.jsx';
+import SectionC from '../sectionC/sectionC.jsx';
 
 // Intro component
 export default class Box extends Component {
@@ -32,6 +33,7 @@ export default class Box extends Component {
         <Empire />
         <SectionA />
         <SectionB />
+        <SectionC />
       </div>
     );
   }

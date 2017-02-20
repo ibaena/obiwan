@@ -70,6 +70,8 @@ export default class SectionA extends Component {
         <div className="col-lg-3 col-lg-offset-2" id="sa-paragraph">
           <span id="sa-para-title">THE INTERNET IS A BIG PLACE.</span>
           <p id="sa-para-content">
+            We are a full-service marketing firm offering marketing campaign design, setup, and execution. Every campaign is created to be unique, efficient, and to effectively increase the target KPI - whether it be impressions, site traffic, or sales.
+            <br />
             We help brands communicate through more platforms to reach more people. Ockupy is a full-service marketing agency specializing in digital creatives that spread messages to the far reaches of the internet community.
           </p>
         </div>

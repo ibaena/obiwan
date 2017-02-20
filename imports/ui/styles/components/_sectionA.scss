@@ -2,7 +2,6 @@
        Section A Styles
 *********************************/
 #sectionA {
-    height: 100vh;
     width: 100%;
     background: #f8f8f8;
 
@@ -11,13 +10,13 @@
         line-height: calc(7vh + 10px);
         opacity: 0.01;
         position: relative;
-        right:70%;
+        right: 70%;
         visibility: hidden;
 
         .sa-header-text {
             font-size: calc(8vw + 5px);
             font-family: 'Ramabhadra', sans-serif;
-            color:#1c1b20;
+            color: #1c1b20;
         }
     }
 
@@ -26,13 +25,13 @@
         max-width: 350px;
         opacity: 0.01;
         position: relative;
-        right:70%;
+        right: 70%;
         visibility: hidden;
 
         #sa-para-title {
             font-size: calc(3vw + 5px);
             font-family: 'Ropa Sans', sans-serif;
-            color:#1c1b20;
+            color: #1c1b20;
         }
 
         #sa-para-content {
@@ -40,8 +39,9 @@
             font-weight: 300;
             margin-top: calc(3vh + 8px);
             text-align: justify;
+            font-family: 'Ropa Sans', sans-serif;
+            font-size: calc(1vw + 2px);
             line-height: calc(1vw + 10px);
-            color:#1c1b20;
         }
     }
 
@@ -60,19 +60,19 @@
             list-style-type: none;
             position: relative;
 
-
             .what-title {
-              color: white;
-              font-size: calc(1vw + 2px);
-              padding-bottom: 2em;
-              padding-top: 1em;
-              font-family: 'Ropa Sans', sans-serif;
+                color: white;
+                font-size: calc(1vw + 2px);
+                padding-bottom: 2em;
+                padding-top: 1em;
+                font-family: 'Ropa Sans', sans-serif;
             }
+
             .what-list-item {
-              color: darkgray;
-              font-family: 'Ropa Sans', sans-serif;
-              font-size: calc(1vw + -1px);
-              line-height: calc(1vw + 10px);
+                color: darkgray;
+                font-family: 'Ropa Sans', sans-serif;
+                font-size: calc(1vw + -1px);
+                line-height: calc(1vw + 10px);
             }
         }
     }
