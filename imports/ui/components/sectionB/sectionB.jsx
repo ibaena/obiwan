@@ -12,21 +12,39 @@ export default class SectionB extends Component {
   }
 
   componentDidMount(){
-    os.on('enter', '#sectionB', (element) => {
+    os.on('enter', '.parrallax-media', (element) => {
       setTimeout(function(){
         $('.parrallax-media').css({
           'transition':'all .6s ease-in',
           'width':'45%',
           'opacity':'1'
         });
-      },800)
+      },600)
     });
-    os.on('leave', '#sectionB', (element) => {
+    os.on('leave', '.parrallax-media', (element) => {
         $('.parrallax-media').css({
           'transition':'all .6s ease-in',
           'width':'0%',
           'opacity':'0.01'
         });
+    });
+    os.on('enter','.sectionB-header', (element) => {
+      setTimeout(function(){
+        $('#sb-title-wrapper').css({
+          'transition':'all .6s ease-in',
+          'opacity':'1',
+          'top':'0',
+          'visibility':'visible'
+        })
+      },400);
+    });
+    os.on('leave','.sectionB-header', (element) => {
+        $('#sb-title-wrapper').css({
+          'transition':'all .4s ease-in',
+          'opacity':'0.01',
+          'top':'300px',
+          'visibility':'hidden'
+        })
     });
   }
 
@@ -34,7 +52,7 @@ export default class SectionB extends Component {
     return (
       <div id="sectionB" className="col-lg-12">
         <div className="sectionB-header col-lg-10 col-lg-offset-2">
-          <div className="col-lg-5">
+          <div className="col-lg-5" id="sb-title-wrapper">
             <span className="sb-header-text">ID</span>
             <br />
             <span className="sb-header-text">EA.</span>

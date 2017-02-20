@@ -12,21 +12,50 @@ export default class SectionA extends Component {
   }
 
   componentDidMount(){
+
     os.on('enter', '#what-we-do', (element) => {
+      setTimeout(function(){
+        $('.sectionA-header ').css({
+          'transition':'all .8s ease-in',
+          'opacity':'1',
+          'right':'0',
+          'visibility':'visible'
+        });
+        $('#sa-paragraph ').css({
+          'transition':'all .8s ease-in',
+          'opacity':'1',
+          'right':'0',
+          'visibility':'visible'
+        });
+      },400)
       setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'20vh'
+          'bottom':'18vh'
         });
-      },700)
+      },600)
     });
     os.on('leave', '#what-we-do', (element) => {
       setTimeout(function(){
+        $('.sectionA-header ').css({
+          'transition':'all .8s ease-in',
+          'opacity':'0',
+          'right':'70%',
+          'visibility':'hidden'
+        });
+        $('#sa-paragraph ').css({
+          'transition':'all .8s ease-in',
+          'opacity':'0',
+          'right':'70%',
+          'visibility':'hidden'
+        });
+      },400)
+      setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'2vh'
+          'bottom':'-2vh'
         });
-      },700)
+      },600)
     });
   }
 

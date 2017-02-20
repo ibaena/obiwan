@@ -9,6 +9,10 @@
     .sectionA-header {
         margin-top: calc(20vh + 10px);
         line-height: calc(7vh + 10px);
+        opacity: 0.01;
+        position: relative;
+        right:70%;
+        visibility: hidden;
 
         .sa-header-text {
             font-size: calc(8vw + 5px);
@@ -20,6 +24,10 @@
     #sa-paragraph {
         margin-top: calc(9vh + 5px);
         max-width: 350px;
+        opacity: 0.01;
+        position: relative;
+        right:70%;
+        visibility: hidden;
 
         #sa-para-title {
             font-size: calc(3vw + 5px);
@@ -42,7 +50,7 @@
         height: 600px;
         position: absolute;
         right: 0;
-        bottom: 2vh;
+        bottom: -2vh;
         display: flex;
         justify-content: center;
         align-items: center;
