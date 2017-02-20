@@ -31,7 +31,7 @@ export default class SectionA extends Component {
       setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'18vh'
+          'bottom':'25vh'
         });
       },600)
     });
@@ -53,7 +53,7 @@ export default class SectionA extends Component {
       setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'-2vh'
+          'bottom':'-10vh'
         });
       },600)
     });
@@ -75,7 +75,7 @@ export default class SectionA extends Component {
             We help brands communicate through more platforms to reach more people. Ockupy is a full-service marketing agency specializing in digital creatives that spread messages to the far reaches of the internet community.
           </p>
         </div>
-        <div id="what-we-do" className="col-lg-6 ">
+        <div id="what-we-do" className="col-lg-6 effect8">
           <ListA />
         </div>
       </div>

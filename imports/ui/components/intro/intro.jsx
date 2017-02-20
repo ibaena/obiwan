@@ -24,6 +24,7 @@ export default class Intro extends Component {
   componentDidMount(){
     $('#intro-box-left').hide();
     $('.scroll-bounce-left').hide();
+    $('.scroll-bounce-right').hide();
 
     let center = ($(window).width() - $('#intro-box').outerWidth())/2;
     $('#intro-box').css({
@@ -56,6 +57,7 @@ export default class Intro extends Component {
         },600)
         $('.scroll-bounce').slideUp(500);
         $('.scroll-bounce-left').slideDown(400);
+        $('.scroll-bounce-right').slideDown(400);
       }
         fired = 1;
       }else if (y_scroll_pos <= scroll_pos_test){
@@ -73,12 +75,21 @@ export default class Intro extends Component {
             $('#intro-box-left').hide('slide',{direction:'right'},400);
             $('.scroll-bounce').slideDown(500);
             $('.scroll-bounce-left').slideUp(400);
+            $('.scroll-bounce-right').slideUp(400);
         }
         fired = 0;
       }
 
     });
-
+    $('a[href^="#"]').on('click', function(event) {
+      let target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
   }
 
   render() {
@@ -97,6 +108,7 @@ export default class Intro extends Component {
         </div>
         <div className="scroll-bounce"> <i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>scroll</div>
         <div className="scroll-bounce-left"> <i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>scroll</div>
+        <div className="scroll-bounce-right"> <a href="#home"><i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>top</a></div>
       </div>
     );
   }
