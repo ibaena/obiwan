@@ -79,7 +79,7 @@ export default class Intro extends Component {
             })
             $('#intro-box-left').css({
                'transition':'all .2s ease-in',
-               'left':'52%',
+               'left':'50%',
                'visibility':'hidden',
                'opacity':'0'
              });
