@@ -54,12 +54,12 @@ export default class Intro extends Component {
         })
         setTimeout(function(){
           $('#intro-box-left').css({
-             'transition':'all .6s ease-in',
+             'transition':'all .3s ease-in',
              'left':'35%',
              'visibility':'visible',
              'opacity':'1'
            });
-        },300)
+        },600)
         $('.scroll-bounce').slideUp(500);
         $('.scroll-bounce-left').slideDown(400);
         $('.scroll-bounce-right').slideDown(400);
@@ -78,8 +78,8 @@ export default class Intro extends Component {
               'top': ($('#intro').height() - $('#intro-box').outerHeight())/2
             })
             $('#intro-box-left').css({
-               'transition':'all .4s ease-in',
-               'left':'150%',
+               'transition':'all .2s ease-in',
+               'left':'52%',
                'visibility':'hidden',
                'opacity':'0'
              });
