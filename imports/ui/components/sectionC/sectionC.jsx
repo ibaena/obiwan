@@ -12,7 +12,22 @@ export default class SectionC extends Component {
   }
 
   componentDidMount(){
-
+    os.on('enter', '#sectionC-parrallax', (element) => {
+      setTimeout(function(){
+        $('#sectionC-parrallax').css({
+          'transition':'all .5s ease-in',
+          'height':'400px',
+          'visibility':'visible',
+        });
+      },400)
+    });
+    os.on('leave', '#sectionC-parrallax', (element) => {
+        $('#sectionC-parrallax').css({
+          'transition':'all .4s ease-in',
+          'height':'0',
+          'visibility':'hidden',
+        });
+    });
   }
 
   render() {
