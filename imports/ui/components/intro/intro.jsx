@@ -22,7 +22,7 @@ export default class Intro extends Component {
     });
   }
   componentDidMount(){
-    $('#intro-box-left').hide();
+    //$('#intro-box-left').hide();
     $('.scroll-bounce-left').hide();
     $('.scroll-bounce-right').hide();
 
@@ -53,8 +53,13 @@ export default class Intro extends Component {
           'left': '5%',
         })
         setTimeout(function(){
-          $('#intro-box-left').show('slide',{direction:'right'},400);
-        },600)
+          $('#intro-box-left').css({
+             'transition':'all .6s ease-in',
+             'left':'35%',
+             'visibility':'visible',
+             'opacity':'1'
+           });
+        },300)
         $('.scroll-bounce').slideUp(500);
         $('.scroll-bounce-left').slideDown(400);
         $('.scroll-bounce-right').slideDown(400);
@@ -72,7 +77,12 @@ export default class Intro extends Component {
               'left': center,
               'top': ($('#intro').height() - $('#intro-box').outerHeight())/2
             })
-            $('#intro-box-left').hide('slide',{direction:'right'},400);
+            $('#intro-box-left').css({
+               'transition':'all .4s ease-in',
+               'left':'150%',
+               'visibility':'hidden',
+               'opacity':'0'
+             });
             $('.scroll-bounce').slideDown(500);
             $('.scroll-bounce-left').slideUp(400);
             $('.scroll-bounce-right').slideUp(400);

@@ -17,9 +17,12 @@
     }
 
     #intro-box-left {
-        right: 15%;
+      position: absolute;
+        left:150%;
         margin: 0;
         text-align: center;
+        visibility: hidden;
+        opacity: 0;
 
         #intro-left-title {
             font-size: calc(3vw + 5px);
