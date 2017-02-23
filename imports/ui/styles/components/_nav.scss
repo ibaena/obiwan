@@ -17,13 +17,21 @@
         cursor: pointer;
     }
 
-
     #nav {
         position: fixed;
         background: white;
         z-index: 990;
         height: calc(100vh - 10%);
         padding: 0;
+
+        .blue {
+            height: calc(100vh - 10%);
+            width: 10px;
+            background: #515cff;
+            right: 50px;
+            position: absolute;
+            opacity: 0;
+        }
     }
 }
 
