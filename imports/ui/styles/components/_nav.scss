@@ -2,33 +2,41 @@
     Nav Styles
 *****************/
 .nav-wrapper {
-  #nav-btn {
-    position: absolute;
-    background: green;
-    z-index: 999;
-    height: 50px;
-    width:50px;
-    cursor: pointer;
-  }
-  #nav {
     position: fixed;
-    background: red;
+    min-height: 100vh;
+    background: white;
+    width: 5vw;
     z-index: 990;
-    height: calc(100vh - 10%);
-    padding: 0;
-  }
-}
 
+    #nav-btn {
+        position: absolute;
+        background: green;
+        z-index: 999;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+
+    #nav {
+        position: fixed;
+        background: white;
+        z-index: 990;
+        height: calc(100vh - 10%);
+        padding: 0;
+    }
+}
 
 .nav-grow {
-  transition:all .4s ease-in;
-  width:calc(100vw - 10%) !important;
-  opacity:1 !important;
-  visibility:visible !important;
+    transition: all 0.2s ease-in;
+    width: calc(100vw - 10%) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
+
 .nav-shrink {
-  transition:all .4s ease-in;
-  width:calc(100vw - 90%) !important;
-  opacity:0 !important;
-  visibility:hidden !important;
+    transition: all 0.2s ease-in;
+    width: calc(100vw - 90%) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }

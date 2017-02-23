@@ -23,13 +23,28 @@ export default class Nav extends Component {
   launchMenu() {
     $('#nav-btn').on('click',function(){
       $('#nav').toggleClass('nav-shrink nav-grow');
-
+      $("body").toggleClass('show-scroll no-scroll');
     })
   }
-
+  hoverMenu(){
+    $('#nav-btn').on('mouseover', function(){
+      $('.nav-wrapper').css({
+        'transition':'all .2s ease-in',
+        'width':'7vw',
+      })
+    })
+    $('#nav-btn').on('mouseleave', function(){
+      $('.nav-wrapper').css({
+        'transition':'all .2s ease-in',
+        'width':'5vw',
+      })
+    })
+  }
   componentDidMount(){
+    $('body').addClass('show-scroll');
     this.centerNav();
     this.launchMenu();
+    this.hoverMenu();
 
   }
 
