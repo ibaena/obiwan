@@ -15,17 +15,19 @@ export default class SectionC extends Component {
     os.on('enter', '#sectionC-parrallax', (element) => {
       setTimeout(function(){
         $('#sectionC-parrallax').css({
-          'transition':'all .5s ease-in',
+          'transition':'all .6s ease-in',
           'height':'400px',
           'visibility':'visible',
+          'opacity':'1'
         });
       },400)
     });
     os.on('leave', '#sectionC-parrallax', (element) => {
         $('#sectionC-parrallax').css({
-          'transition':'all .4s ease-in',
+          'transition':'all .3s ease-in',
           'height':'0',
           'visibility':'hidden',
+          'opacity':'0'
         });
     });
   }

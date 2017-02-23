@@ -16,16 +16,16 @@ export default class SectionA extends Component {
     os.on('enter', '#what-we-do', (element) => {
       setTimeout(function(){
         $('.sectionA-header ').css({
-          'transition':'all .8s ease-in',
+          'transition':'all 1s ease-in',
           'opacity':'1',
           'right':'0',
           'visibility':'visible'
         });
         $('#sa-paragraph ').css({
-          'transition':'all .8s ease-in',
+          'transition':'all 1s ease-in',
           'opacity':'1',
           'right':'0',
-          'visibility':'visible'
+          'visibility':'visible',
         });
       },400)
       setTimeout(function(){
@@ -47,7 +47,7 @@ export default class SectionA extends Component {
           'transition':'all .8s ease-in',
           'opacity':'0',
           'right':'70%',
-          'visibility':'hidden'
+          'visibility':'hidden',
         });
       },400)
       setTimeout(function(){

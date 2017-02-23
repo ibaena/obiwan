@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../../ui/components/header/header.jsx';
 import Box from '../../ui/components/box/box.jsx';
+import Nav from '../../ui/components/nav/nav.jsx';
 
 
 // This component - represents a single page
@@ -20,5 +21,6 @@ export const Home = () =>
       </ul>
     </div>
     <div id="white"></div>
+    <Nav />
     <Box />
   </div>
