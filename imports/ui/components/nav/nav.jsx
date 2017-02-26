@@ -12,12 +12,12 @@ export default class Nav extends Component {
     $('#nav').css({
        position:'fixed',
        left: '5%',
-       top: ($('#home').height() - $('#nav').outerHeight())/2
+       top: ($('.nav-wrapper').height() - $('#nav').outerHeight())/2
      });
      $('#nav-btn').css({
         position:'fixed',
         left: '50px',
-        top: ($('#home').height() - $('#nav-btn').outerHeight())/2
+        top: ($('.nav-wrapper').height() - $('#nav-btn').outerHeight())/2
       });
   }
   launchMenu() {
@@ -28,11 +28,7 @@ export default class Nav extends Component {
       $("body").toggleClass('show-scroll no-scroll');
 
       if (fired === true){
-        $('#home').css({
-          'transform': 'scale(.82)',
-          'transition':'all .3s ease-in',
-          'position':'fixed'
-        })
+
         $('.blue').css({
           'opacity': '1',
           'transition':'all .1s ease-in',
@@ -40,17 +36,18 @@ export default class Nav extends Component {
           'width':'250px'
         })
       } else {
-        $('#home').css({
-          'transform': 'none',
-          'transition':'all .3s ease-in',
-          'position':'absolute'
-        })
+
         $('.blue').css({
           'opacity': '0',
           'transition':'all .2s ease-in',
           'right':'50px',
           'width':'10px;'
         })
+        setTimeout(function(){
+          $('#home').css({
+            'height':'inherit',
+          })
+        },400)
       }
 
     })
