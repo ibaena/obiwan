@@ -31,6 +31,16 @@ export default class Nav extends Component {
       $("body").toggleClass('show-scroll no-scroll');
 
       if (fired === true){
+        $('#exit-nav').css({
+          'transition':'all .4s ease-in',
+          'opacity':'1',
+          'display':'block'
+        })
+        $('#open-nav').css({
+          'transition':'all .4s ease-in',
+          'opacity':'1',
+          'display':'none'
+        })
         setTimeout(function(){
           navItem.css({
             'opacity': '1',
@@ -54,6 +64,16 @@ export default class Nav extends Component {
           'width':'250px'
         })
       } else {
+        $('#open-nav').css({
+          'transition':'all .4s ease-in',
+          'opacity':'1',
+          'display':'block'
+        })
+        $('#exit-nav').css({
+          'transition':'all .4s ease-in',
+          'opacity':'1',
+          'display':'none'
+        })
         navItem.css({
           'opacity': '0',
           'transition':'all .4s ease-in',
@@ -104,7 +124,10 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="nav-wrapper">
-        <div id="nav-btn">MENU</div>
+        <div id="nav-btn">
+          <span id="open-nav">MENU</span>
+          <span id="exit-nav">EXIT</span>
+        </div>
         <div id="nav" className="container-fluid nav-shrink">
           <Menu />
           <div className="blue"></div>

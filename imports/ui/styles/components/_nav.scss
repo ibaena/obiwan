@@ -20,6 +20,14 @@
         font-size: 13px;
         font-family: 'Ramabhadra', sans-serif;
         color: #1c1b20;
+
+        #open-nav {
+          opacity: 1;
+        }
+        #exit-nav {
+          display:none;
+          opacity: 0;
+        }
     }
     #nav-btn:hover {
         transition: all .2s linear;
