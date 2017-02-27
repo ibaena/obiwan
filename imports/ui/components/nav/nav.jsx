@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
+import Menu from './menu.jsx';
 
-// Intro component
+// NAV component
 export default class Nav extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
   constructor() {
@@ -22,13 +23,30 @@ export default class Nav extends Component {
   }
   launchMenu() {
     let fired = false;
+    let navItem = $('#menu-list').find('.menu-item');
+
     $('#nav-btn').on('click',function(){
       fired = !fired;
       $('#nav').toggleClass('nav-shrink nav-grow');
       $("body").toggleClass('show-scroll no-scroll');
 
       if (fired === true){
-
+        setTimeout(function(){
+          navItem.css({
+            'opacity': '1',
+            'transition':'all .4s ease-in',
+          })
+        },400)
+        $('#extra').css({
+          'opacity': '1',
+          'transition':'all .4s ease-in',
+          'top':'0',
+        })
+        $('#more-info').css({
+          'opacity': '1',
+          'transition':'all .4s ease-in',
+          'top':'0',
+        })
         $('.blue').css({
           'opacity': '1',
           'transition':'all .1s ease-in',
@@ -36,6 +54,22 @@ export default class Nav extends Component {
           'width':'250px'
         })
       } else {
+        setTimeout(function(){
+          navItem.css({
+            'opacity': '0',
+            'transition':'all .4s ease-in',
+          })
+        },400)
+        $('#extra').css({
+          'opacity': '0',
+          'transition':'all .3s ease-in',
+          'top':'30px',
+        })
+        $('#more-info').css({
+          'opacity': '0',
+          'transition':'all .3s ease-in',
+          'top':'30px',
+        })
 
         $('.blue').css({
           'opacity': '0',
@@ -43,11 +77,6 @@ export default class Nav extends Component {
           'right':'50px',
           'width':'10px;'
         })
-        setTimeout(function(){
-          $('#home').css({
-            'height':'inherit',
-          })
-        },400)
       }
 
     })
@@ -79,6 +108,7 @@ export default class Nav extends Component {
       <div className="nav-wrapper">
         <div id="nav-btn">MENU</div>
         <div id="nav" className="container-fluid nav-shrink">
+          <Menu />
           <div className="blue"></div>
         </div>
       </div>
