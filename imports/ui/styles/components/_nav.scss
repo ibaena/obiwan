@@ -23,17 +23,24 @@
 
         #open-nav {
           opacity: 1;
+
+          #right-align {
+            transform: rotate(90deg);
+            font-size: 30px;
+          }
         }
+
         #exit-nav {
           display:none;
           opacity: 0;
         }
     }
     #nav-btn:hover {
-        transition: all .2s linear;
-        font-size: 18px;
-        font-weight: 500;
+      transition: all .1s linear;
+      transform: scale(1.2) rotate(270deg);
+
     }
+
     #nav {
         position: fixed;
         background: white;
