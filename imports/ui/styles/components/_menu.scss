@@ -5,7 +5,6 @@
     #menu-list {
         list-style-type: none;
 
-
         .menu-item {
             font-size: calc(2vw + 12px);
             font-family: 'Ramabhadra', sans-serif;
@@ -15,15 +14,16 @@
                 text-decoration: none;
                 color: #1c1b20;
             }
+
             .menu-item-link:hover {
-              transition: all .2s linear;
-              color:lightgrey;
+                transition: all 0.2s linear;
+                color: lightgrey;
             }
         }
     }
 
     #more-info {
-        margin: 30px 0 30px 0;
+        margin: 30px 0;
         font-size: 14px;
         opacity: 0;
         top: 30px;
@@ -36,14 +36,21 @@
     }
 
     #extra {
-        margin: 30px 0 30px 0;
-        opacity:0;
+        margin: 30px 0;
+        opacity: 0;
         top: 30px;
 
         .cs-font-header {
             font-size: 30px;
             color: #1c1b20;
             margin-top: 2px;
+            position: relative;
+            right: 30px;
+
+            #thin-arrow {
+                position: relative;
+                right: 50px;
+            }
         }
     }
 }

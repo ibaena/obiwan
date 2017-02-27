@@ -14,9 +14,25 @@ export default class Menu extends Component {
        top: ($('.nav-wrapper').height() - $('#menu').outerHeight())/2
      });
   }
+  hoverArrow(){
+    $('.cs-font-header').on('mouseover', function(){
+      $('#thin-arrow').css({
+        'transition':'all .2s ease-in',
+        'right':'20px',
+      })
+    })
+    $('.cs-font-header').on('mouseleave', function(){
+      $('#thin-arrow').css({
+        'transition':'all .2s ease-in',
+        'right':'50px',
+      })
+    })
+  }
 
   componentDidMount(){
     this.centerMenu();
+    this.hoverArrow();
+
   }
   getMenu() {
   return [
@@ -50,7 +66,7 @@ renderMenu() {
         </div>
         <div id="extra" className="col-md-12">
           <i>Want to work with us ?</i><br/>
-          <h4 className="cs-font-header">BRIEF US.</h4>
+          <h4 className="cs-font-header"><i className="fa fa-long-arrow-right" aria-hidden="true" id="thin-arrow"></i>BRIEF US.</h4>
         </div>
       </div>
     );

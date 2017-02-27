@@ -7,16 +7,25 @@
     background: white;
     width: 5vw;
     z-index: 990;
+    left: 0;
 
     #nav-btn {
-        position: absolute;
-        background: green;
         z-index: 999;
         height: 50px;
         width: 50px;
         cursor: pointer;
+        transform: rotate(270deg);
+        text-align: center;
+        padding-top: 25px;
+        font-size: 13px;
+        font-family: 'Ramabhadra', sans-serif;
+        color: #1c1b20;
     }
-
+    #nav-btn:hover {
+        transition: all .2s linear;
+        font-size: 18px;
+        font-weight: 500;
+    }
     #nav {
         position: fixed;
         background: white;

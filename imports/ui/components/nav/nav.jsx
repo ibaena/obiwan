@@ -17,7 +17,7 @@ export default class Nav extends Component {
      });
      $('#nav-btn').css({
         position:'fixed',
-        left: '50px',
+        left: '65px',
         top: ($('.nav-wrapper').height() - $('#nav-btn').outerHeight())/2
       });
   }
@@ -54,12 +54,10 @@ export default class Nav extends Component {
           'width':'250px'
         })
       } else {
-        setTimeout(function(){
-          navItem.css({
-            'opacity': '0',
-            'transition':'all .4s ease-in',
-          })
-        },400)
+        navItem.css({
+          'opacity': '0',
+          'transition':'all .4s ease-in',
+        })
         $('#extra').css({
           'opacity': '0',
           'transition':'all .3s ease-in',
