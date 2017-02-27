@@ -60,9 +60,9 @@ renderMenu() {
           {this.renderMenu()}
         </ul>
         <div id="more-info" className="col-md-12">
-          <a href="#" id="address">115 River Rd #151, Edgewater, NJ 07020</a> <br />
-          <b>(646) 883-6584 <br />
-          contact@ockupy.com</b>
+          <a href="https://www.google.com/maps/place/115+River+Rd+%23151,+Edgewater,+NJ+07020/@40.805273,-73.9937097,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f7d1d1ad4a8f:0xbc3ac98fccfd168a!8m2!3d40.805273!4d-73.991521" target="_blank" id="address">115 River Rd #151, Edgewater, NJ 07020</a> <br />
+          <b><a href="tel:1-646-883-6584" id="telephone">(646) 883-6584</a> <br />
+          <a href= "mailto:contact@ockupy.com" id="email">contact@ockupy.com</a></b>
         </div>
         <div id="extra" className="col-md-12">
           <i>Want to work with us ?</i><br/>
