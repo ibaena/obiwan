@@ -44,12 +44,14 @@ export default class SectionC extends Component {
         </div>
         <div id="sectionC-parrallax"></div>
         <div className="col-lg-3 col-lg-offset-2" id="program-title">
-          <span>Influencers &</span>
+          <a href="http://wine4food.com" target="_blank" id="wine-link">
+          <span>WINE </span>
           <br /><br />
           <span>
-            <span className="italic">Lifestyle </span>
-            Marketing.
+            <span className="italic">4 </span>
+            Food.
           </span>
+        </a>
         </div>
         <div className="col-lg-3" id="sc-para-1">
           Our new platform allows influencers to pick and choose the campaigns they want to join. We want our influencers to stay true to their following, so we give them the freedom to promote brands they want to or already support - and, best of all, get paid for it.

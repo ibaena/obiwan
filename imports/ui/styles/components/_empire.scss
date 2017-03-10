@@ -3,7 +3,7 @@
 *********************************/
 
 #empire {
-  background-image: url('/images/empire.jpg');
+  background-image: url('/portfolio/projects/me-parra.png');
   padding: 0;
   height: 500px;
   width: 100%;
@@ -11,4 +11,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  #black-over {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(28, 27, 32, 0.6);
+  }
 }

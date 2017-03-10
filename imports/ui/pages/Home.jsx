@@ -10,7 +10,7 @@ export const Home = () =>
   <div id="home" className="container-fluid">
     <div id="top-white" className="col-lg-12">
       <a href="/" id="brand">
-        <img src="/images/ockupy.png" className="img-responsive" id="logo" />
+        <img src="/portfolio/ivan-logo.png" className="img-responsive" id="logo" />
       </a>
     </div>
     <div className="social-bar" id="left-white">

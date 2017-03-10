@@ -112,9 +112,9 @@ export default class Intro extends Component {
           <h1 className="intro-text">LLO.</h1>
         </div>
         <div id="intro-box-left" className="col-lg-6">
-          <h2 id="intro-left-title">Reach A Larger Audience</h2>
+          <h2 id="intro-left-title">Welcome to My Website!</h2>
           <hr id="left-break" />
-          <p id="intro-left-text">Ockupy A Larger Market</p>
+          <p id="intro-left-text">Web Developer</p>
         </div>
         <div className="scroll-bounce"> <i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>scroll</div>
         <div className="scroll-bounce-left"> <i className="fa fa-long-arrow-left animated bounce" id="intro-arrow" aria-hidden="true"></i>scroll</div>

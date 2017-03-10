@@ -63,16 +63,16 @@ export default class SectionA extends Component {
     return (
       <div id="sectionA" className="col-lg-12">
         <div className="sectionA-header col-lg-8 col-lg-offset-2">
-          <span className="sa-header-text">DIGI</span>
+          <span className="sa-header-text">TDP.</span>
           <br />
-          <span className="sa-header-text">TAL.</span>
+          <span className="sa-header-text"></span>
         </div>
         <div className="col-lg-3 col-lg-offset-2" id="sa-paragraph">
-          <span id="sa-para-title">THE INTERNET IS A BIG PLACE.</span>
+          <span id="sa-para-title">TAMPA DOWNTOWN PARTNERSHIP.</span>
           <p id="sa-para-content">
-            We are a full-service marketing firm offering marketing campaign design, setup, and execution. Every campaign is created to be unique, efficient, and to effectively increase the target KPI - whether it be impressions, site traffic, or sales.
+          Downtown Tampa has become a pinnacle for entertainment drawing in thousands of travelers every year to the city's various shops, restaurants and attractions. The Tampa Downtown Partnership is the leader in fostering vibrant, diverse, 24-hour downtown neighborhoods in which to learn, live, work and play.
             <br />
-            We help brands communicate through more platforms to reach more people. Ockupy is a full-service marketing agency specializing in digital creatives that spread messages to the far reaches of the internet community.
+            My primary role in the project was to integrate the Google Maps API and create the 'Interactive Map'!
           </p>
         </div>
         <div id="what-we-do" className="col-lg-6 effect8">

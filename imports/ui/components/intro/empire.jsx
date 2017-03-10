@@ -17,7 +17,7 @@ export default class Empire extends Component {
   render() {
     return (
       <div id="empire" className="col-lg-12">
-
+        <div id="black-over"></div>
       </div>
     );
   }

@@ -59,15 +59,18 @@ export default class SectionB extends Component {
           </div>
           <div className="col-lg-7" id="sb-paragraph">
             <div id="title-wrapper">
-              <span id="sb-italic">INFLUENCER</span> <br />
-              <span id="sb-para-title">MARKETING<span className="larger">.</span></span>
+              <span id="sb-italic">McCaffreys</span> <br />
+              <span id="sb-para-title">Food Stores<span className="larger">.</span></span>
             </div>
-            <div id="sb-para"> Influencer Marketing, unlike display ads or commercials, people choose to follow influencers because of their opinions on fashion, expertise in working out, or because their life is downright interesting. We leverage the relationship that influencers have with their following to share products and services that would interest them. What we don't do though is put the reputation of our influencers at risk. Our campaigns are designed to blend into our influencers daily lives; highlighting the product in the most authentic manner possible. We've coined this strategy: Lifestyle Marketing.</div>
+            <div id="sb-para"> Built on a reputation of exceptional customer service, the highest quality fresh food brought to your table and an unsurpassable commitment to the communities in which we do business
+              I worked on the front end of the project with another developer and a web designer.
+            </div>
           </div>
         </div>
-        <div className="parrallax-media col-lg-5">
-
-        </div>
+        <a href="http://mccaffreys.com" target="_blank">
+          <div className="parrallax-media col-lg-5">
+          </div>
+        </a>
       </div>
     );
   }
