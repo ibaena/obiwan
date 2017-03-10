@@ -15,9 +15,9 @@ export const Home = () =>
     </div>
     <div className="social-bar" id="left-white">
       <ul id="social-list">
-        <li className="social-list-item"><a href="#" className="social-links"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li className="social-list-item"><a href="#" className="social-links"><i className="fa fa-github" aria-hidden="true"></i></a></li>
+        <li className="social-list-item"><a href="#" className="social-links"><i className="fa fa-codepen" aria-hidden="true"></i></a></li>
         <li className="social-list-item"><a href="#" className="social-links"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li className="social-list-item"><a href="#" className="social-links"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
       </ul>
     </div>
     <div id="white"></div>
