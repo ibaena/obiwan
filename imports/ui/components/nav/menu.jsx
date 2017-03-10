@@ -11,7 +11,7 @@ export default class Menu extends Component {
     $('#menu').css({
        position:'absolute',
        left:'200px',
-       top: ($('.nav-wrapper').height() - $('#menu').outerHeight())/2
+       top: '10em'
      });
   }
   hoverArrow(){
@@ -36,19 +36,20 @@ export default class Menu extends Component {
   }
   getMenu() {
   return [
-    { _id: 1, name:'Agency', src:'/'},
-    { _id: 2, name:'Values', src:'/work'},
-    { _id: 3, name:'Studio', src:'/studio'},
-    { _id: 4, name:'Projects', src:'/projects'},
-    { _id: 5, name:'Jobs', src:'/jobs'},
+    { _id: 1, name:'', src:'', main:''},
+    { _id: 2, name:'INTRO.', src:'', main:'I’M A WEB DEVELOPER   from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group.'},
+    { _id: 3, name:'EXTRA.', src:'' , main:'If you want to know more about me, my work or if youʼre an Elder Scrolls Skyrim or want to talk Knicks basketball, feel free to contact me.'},
+    { _id: 4, name:'GITHUB.', src:'https://github.com/ibaena', main:''},
+    { _id: 5, name:'CODEPEN.', src:'/jobs', main:''},
   ];
 }
 renderMenu() {
   return this.getMenu().map((item) => (
     <li className="menu-item " key={item._id}>
       <a className="menu-item-link" href={item.src} >
-        {item.name}<span>.</span>
+        {item.name}
       </a>
+      <p className="menu-text">{item.main}</p>
     </li>
   ))
 }
@@ -60,9 +61,9 @@ renderMenu() {
           {this.renderMenu()}
         </ul>
         <div id="more-info" className="col-md-12">
-          <a href="https://www.google.com/maps/place/115+River+Rd+%23151,+Edgewater,+NJ+07020/@40.805273,-73.9937097,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f7d1d1ad4a8f:0xbc3ac98fccfd168a!8m2!3d40.805273!4d-73.991521" target="_blank" id="address">115 River Rd #151, Edgewater, NJ 07020</a> <br />
-          <b><a href="tel:1-646-883-6584" id="telephone">(646) 883-6584</a> <br />
-          <a href= "mailto:contact@ockupy.com" id="email">contact@ockupy.com</a></b>
+          <a href="https://www.google.com/maps/place/Hoboken,+NJ/@40.7456804,-74.030902,14z/data=!4m5!3m4!1s0x89c257608d1533d1:0x44b6ca6a1137bf87!8m2!3d40.7439905!4d-74.0323626" target="_blank" id="address">Greater New York City</a> <br />
+          <b><a href="tel:1-646-883-6584" id="telephone"></a>
+          <a href= "mailto:contact@ockupy.com" id="email">ivam.baena[at]gmail[dot]com</a></b>
         </div>
         <div id="extra" className="col-md-12">
           <i>Want to work with us ?</i><br/>

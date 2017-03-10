@@ -125,7 +125,7 @@ export default class Nav extends Component {
     return (
       <div className="nav-wrapper">
         <div id="nav-btn">
-          <span id="open-nav"><i className="fa fa-align-right" aria-hidden="true" id="right-align"></i>MENU</span>
+          <span id="open-nav"><i className="fa fa-user-circle-o" aria-hidden="true" id="right-align"></i>ME</span>
           <span id="exit-nav">EXIT</span>
         </div>
         <div id="nav" className="container-fluid nav-shrink">

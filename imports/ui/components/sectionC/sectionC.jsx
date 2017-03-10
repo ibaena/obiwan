@@ -54,10 +54,10 @@ export default class SectionC extends Component {
         </a>
         </div>
         <div className="col-lg-3" id="sc-para-1">
-          Our new platform allows influencers to pick and choose the campaigns they want to join. We want our influencers to stay true to their following, so we give them the freedom to promote brands they want to or already support - and, best of all, get paid for it.
+          Wine4Food.com is the editorial arm of Golden Ram Imports. Wine4Food shares the stories behind our wines, the makers, the vineyards, and what makes them special.
         </div>
         <div className="col-lg-3" id="sc-para-2" >
-          Matching rich and authentic content with social media’s most followed figures. When compared to other forms of digital advertising, influencer campaigns drive 11x more ROI.
+          For this project I contributed in all phases of the project from design to launch. I was on a team with one other developer.
         </div>
 
       </div>

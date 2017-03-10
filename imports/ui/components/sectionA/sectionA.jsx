@@ -63,9 +63,9 @@ export default class SectionA extends Component {
     return (
       <div id="sectionA" className="col-lg-12">
         <div className="sectionA-header col-lg-8 col-lg-offset-2">
-          <span className="sa-header-text">TDP.</span>
+          <span className="sa-header-text">DIGI</span>
           <br />
-          <span className="sa-header-text"></span>
+          <span className="sa-header-text">TAL.</span>
         </div>
         <div className="col-lg-3 col-lg-offset-2" id="sa-paragraph">
           <span id="sa-para-title">TAMPA DOWNTOWN PARTNERSHIP.</span>
