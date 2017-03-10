@@ -31,7 +31,7 @@ export default class SectionA extends Component {
       setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'25vh'
+          'bottom':'24em'
         });
       },600)
     });
@@ -53,7 +53,7 @@ export default class SectionA extends Component {
       setTimeout(function(){
         $('#what-we-do').css({
           'transition':'all .6s ease-in',
-          'bottom':'-10vh'
+          'bottom':'-5em'
         });
       },600)
     });

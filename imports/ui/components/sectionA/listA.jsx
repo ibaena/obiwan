@@ -11,18 +11,20 @@ export default class ListA extends Component {
   }
 
   componentDidMount(){
-    $('.what-we-do-list').hide();
-    $('.tdp-img').hide();
 
     os.on('enter', '#what-we-do', (element) => {
       setTimeout(function(){
-        $('.what-we-do-list').fadeIn(800);
-        $('.tdp-img').fadeIn(800);
+        $('.tdp-img').css({
+          'transition':'all .4s ease-in',
+          'opacity':'1'
+        });
       },600)
     });
     os.on('leave', '#what-we-do', (element) => {
-        $('.what-we-do-list').fadeOut(800);
-        $('.tdp-img').fadeOut(800);
+        $('.tdp-img').css({
+          'transition':'all .4s ease-in',
+          'opacity':'0'
+        });
     });
 
   }

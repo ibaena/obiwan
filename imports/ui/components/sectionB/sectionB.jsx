@@ -10,7 +10,20 @@ export default class SectionB extends Component {
     super();
 
   }
-
+  mcArrow(){
+    $('#mc-right-arrow').on('mouseover', function(){
+      $('.mc-arrow').css({
+        'transition':'all .2s ease-in',
+        'right':'1em',
+      })
+    })
+    $('#mc-right-arrow').on('mouseleave', function(){
+      $('.mc-arrow').css({
+        'transition':'all .2s ease-in',
+        'right':'0em',
+      })
+    })
+  }
   componentDidMount(){
     os.on('enter', '.parrallax-media', (element) => {
       setTimeout(function(){
@@ -46,6 +59,8 @@ export default class SectionB extends Component {
           'visibility':'hidden'
         })
     });
+
+    this.mcArrow();
   }
 
   render() {
@@ -64,6 +79,8 @@ export default class SectionB extends Component {
             </div>
             <div id="sb-para"> Built on a reputation of exceptional customer service, the highest quality fresh food brought to your table and an unsurpassable commitment to the communities in which we do business
               I worked on the front end of the project with another developer and a web designer.
+              <br/>
+              <p id="mc-right-arrow"><i className="fa fa-long-arrow-left mc-arrow" aria-hidden="true" id="thin-arrow"></i> CLICK HERE.</p>
             </div>
           </div>
         </div>

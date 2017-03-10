@@ -37,7 +37,7 @@ export default class Menu extends Component {
   getMenu() {
   return [
     { _id: 1, name:'', src:'', main:''},
-    { _id: 2, name:'INTRO.', src:'', main:'I’M A WEB DEVELOPER   from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group.'},
+    { _id: 2, name:'INTRO.', src:'', main:'I am a Web Developer from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group.'},
     { _id: 3, name:'EXTRA.', src:'' , main:'If you want to know more about me, my work or if youʼre an Elder Scrolls Skyrim or want to talk Knicks basketball, feel free to contact me.'},
     { _id: 4, name:'GITHUB.', src:'https://github.com/ibaena', main:''},
     { _id: 5, name:'CODEPEN.', src:'/jobs', main:''},

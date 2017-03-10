@@ -63,6 +63,18 @@
             font-size: calc(1vw + 2px);
             line-height: calc(1vw + 10px);
             text-align: justify;
+
+            #mc-right-arrow {
+                position: absolute;
+                left: -2em;
+                bottom: -3em;
+
+                i {
+                    margin-right: 15px;
+                    right: 0em;
+                    position: relative;
+                }
+            }
         }
     }
 }
