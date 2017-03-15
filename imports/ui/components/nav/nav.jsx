@@ -118,7 +118,6 @@ export default class Nav extends Component {
     this.centerNav();
     this.launchMenu();
     this.hoverMenu();
-
   }
 
   render() {
